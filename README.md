@@ -23,6 +23,16 @@ The recipe verifies:
 - Apple Developer ID certificate chain
 - Strict code-signing validity
 
+## Import Nexus Shell into Munki
+
+Configure AutoPkg with a writable Munki repository, then run:
+
+```sh
+autopkg run NexusShell.munki
+```
+
+The Munki recipe inherits the same release selection and Developer ID checks from the download recipe. It imports the Apple silicon app into `apps/NexusShell` and assigns it to the `testing` catalog by default. Create a recipe override before changing catalogs or other deployment metadata.
+
 Nexus Shell currently requires macOS 14.2 or later on Apple silicon.
 
 Product information and direct downloads are available at [nexusshell.app](https://nexusshell.app/).
