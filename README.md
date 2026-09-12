@@ -6,6 +6,8 @@ Nexus Shell is a native macOS SSH workspace for Apple silicon Macs. The download
 
 ## Add the recipe repository
 
+For a staged rollout, start with the [managed Mac pilot checklist](docs/managed-mac-checklist.md): recipe trust, signature verification, Munki testing defaults, client eligibility and commercial-use requirements. The [full deployment guide](https://nexusshell.app/en/guides/deploy-macos-ssh-client-autopkg-munki/?utm_source=github-recipes&utm_medium=repository&utm_campaign=managed_macs_202609) also covers troubleshooting and evaluation tasks.
+
 ```sh
 autopkg repo-add viewer12/nexusshell-recipes
 ```
